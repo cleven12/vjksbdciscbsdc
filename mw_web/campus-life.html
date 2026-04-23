@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Campus Life | Mwenge Catholic University</title>
+    <link rel="canonical" href="campus-life.html">
+    <meta name="description" content="Experience vibrant campus life at Mwenge Catholic University - student affairs, clubs, sports, housing, and creative activities.">
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Campus Life - Mwenge Catholic University"}</script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/mwecau.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Splide.js -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#513f83',
+                        'primary-dark': '#3b2a68',
+                        accent: '#e000e7',
+                        'accent-hover': '#c000c7',
+                    },
+                    fontFamily: {
+                        heading: ['Oswald', 'sans-serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'DM Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif; }
+        .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .mobile-menu.open { max-height: 100vh; }
+        .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .nav-link-premium { position: relative; }
+        .nav-link-premium::after { content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background: #e000e7; transition: all 0.3s ease; transform: translateX(-50%); }
+        .nav-link-premium:hover::after { width: 100%; }
+        .card-lift { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(81, 63, 131, 0.15); }
+        .gradient-text { background: linear-gradient(135deg, #513f83 0%, #e000e7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        a:focus, button:focus { outline: 2px solid #e000e7; outline-offset: 2px; }
+        
+        /* Gallery overlay effect */
+        .gallery-item { position: relative; overflow: hidden; }
+        .gallery-item img { transition: transform 0.5s ease; }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(81, 63, 131, 0.9), transparent); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: flex-end; justify-content: center; padding: 1rem; }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        
+        /* Sports card animation */
+        .sports-card { position: relative; overflow: hidden; }
+        .sports-card img { transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+        .sports-card:hover img { transform: scale(1.15); }
+        .sports-tag { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(81, 63, 131, 0.95), transparent); padding: 2rem 1rem 1rem; transform: translateY(100%); transition: transform 0.4s ease; }
+        .sports-card:hover .sports-tag { transform: translateY(0); }
+        
+        /* Spin animation for icons */
+        @keyframes spin-icon { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .spin-icon:hover i { animation: spin-icon 0.6s ease-in-out; }
+        
+        /* Pulse animation */
+        @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(224, 0, 231, 0.4); } 50% { box-shadow: 0 0 20px 10px rgba(224, 0, 231, 0); } }
+        .pulse-glow:hover { animation: pulse-glow 1.5s ease-in-out infinite; }
+    </style>
+</head>
+
+<body class="overflow-x-hidden bg-white text-gray-900">
+    <!-- Skip to main content -->
+    <a href="campus-life.html#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-accent text-white px-4 py-2 rounded z-50">Skip to main content</a>
+
+    <!-- Top Header - Desktop Only -->
+    <header class="hidden lg:block bg-gradient-to-r from-primary to-primary-dark text-white py-4 text-center shadow-lg">
+        <h1 class="font-heading text-3xl font-bold tracking-wide">Mwenge Catholic University</h1>
+        <p class="italic text-white/90 mt-1">"Lux Mundi - Light of the World"</p>
+    </header>
+
+    <!-- Secondary Nav Bar - Desktop -->
+    <div class="hidden md:flex items-center justify-between bg-primary-dark text-white text-sm px-4 py-2">
+        <div class="flex items-center gap-4">
+            <a href="https://www.facebook.com/mwecau2016/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-accent transition-all duration-300 hover:scale-110"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+            <a href="https://www.instagram.com/mwengecatholicuniversity/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-accent transition-all duration-300 hover:scale-110"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+            <a href="https://twitter.com/mwecau1" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="hover:text-accent transition-all duration-300 hover:scale-110"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+            <a href="https://www.linkedin.com/company/mwenge-catholic-university/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-accent transition-all duration-300 hover:scale-110"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+        </div>
+        <nav class="flex items-center gap-6" aria-label="Secondary navigation">
+            <a href="gallery.html" class="hover:text-accent transition-colors">Gallery</a>
+            <a href="https://cleven12.github.io/mw_web/uni-pdf-preview/1767168412-ALMANAC%20FOR%202025_2026.pdf" target="_blank" class="hover:text-accent transition-colors">Almanac</a>
+        </nav>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="sticky top-0 z-50 bg-primary shadow-xl" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <a href="https://cleven12.github.io/mw_web/index.html" class="flex items-center gap-3 group" aria-label="MWECAU Home">
+                    <img src="img/mwecau.png" alt="MWECAU Logo" class="h-12 lg:h-16 w-auto transition-transform duration-300 group-hover:scale-105">
+                    <div class="lg:hidden text-white">
+                        <h2 class="font-heading text-lg font-bold leading-tight">Mwenge Catholic University</h2>
+                        <p class="text-xs italic text-white/80">"Lux Mundi"</p>
+                    </div>
+                </a>
+
+                <div class="hidden lg:flex items-center gap-6">
+                    <a href="https://cleven12.github.io/mw_web/index.html" class="nav-link-premium text-white font-medium hover:text-accent transition-colors py-2">Home</a>
+                    <a href="https://cleven12.github.io/mw_web/about.html" class="nav-link-premium text-white font-medium hover:text-accent transition-colors py-2">About</a>
+                    <a href="academics.html" class="nav-link-premium text-white font-medium hover:text-accent transition-colors py-2">Academics</a>
+                    <div class="dropdown relative">
+                        <button class="nav-link-premium text-white font-medium hover:text-accent transition-colors py-2 flex items-center gap-1" aria-haspopup="true">Admission <i data-lucide="chevron-down" class="w-4 h-4"></i></button>
+                        <ul class="dropdown-menu absolute top-full left-0 bg-white text-gray-900 shadow-xl rounded-lg py-2 min-w-48 z-50 border border-gray-100">
+                            <li><a href="academics.html" class="block px-4 py-2 hover:bg-primary hover:text-white transition-all duration-200">Admission Info</a></li>
+                            <li><a href="https://uas.mwecau.ac.tz" class="block px-4 py-2 bg-accent text-white hover:bg-accent-hover transition-all duration-200 font-semibold">Apply Now</a></li>
+                        </ul>
+                    </div>
+                    <a href="campus-life.html" class="nav-link-premium text-white font-medium hover:text-accent transition-colors py-2 bg-accent/20 px-4 rounded-lg">Campus Life</a>
+                    <a href="https://cleven12.github.io/mw_web/library.html" class="nav-link-premium text-white font-medium hover:text-accent transition-colors py-2">Library</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden text-white p-2 hover:bg-primary-dark rounded-lg transition-colors" aria-label="Toggle menu" aria-expanded="false">
+                    <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu lg:hidden bg-primary-dark">
+            <div class="px-4 py-4 space-y-2">
+                <a href="https://cleven12.github.io/mw_web/index.html" class="block text-white py-3 px-4 rounded-lg hover:bg-accent transition-all duration-200 flex items-center gap-3"><i data-lucide="home" class="w-5 h-5"></i> Home</a>
+                <a href="https://cleven12.github.io/mw_web/about.html" class="block text-white py-3 px-4 rounded-lg hover:bg-accent transition-all duration-200 flex items-center gap-3"><i data-lucide="info" class="w-5 h-5"></i> About</a>
+                <a href="academics.html" class="block text-white py-3 px-4 rounded-lg hover:bg-accent transition-all duration-200 flex items-center gap-3"><i data-lucide="book-open" class="w-5 h-5"></i> Academics</a>
+                <a href="https://uas.mwecau.ac.tz" class="block text-white py-3 px-4 rounded-lg bg-accent hover:bg-accent-hover transition-all duration-200 font-semibold flex items-center gap-3"><i data-lucide="pen-line" class="w-5 h-5"></i> Apply Now</a>
+                <a href="campus-life.html" class="block text-white py-3 px-4 rounded-lg bg-accent/30 flex items-center gap-3"><i data-lucide="users" class="w-5 h-5"></i> Campus Life</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Banner -->
+        <section class="relative h-[300px] lg:h-[400px] overflow-hidden">
+            <img src="images/pageImages/1725959260-BANNER-WEB-CONFIRM-3-CAMPUS-LIFE.jpg" alt="Campus Life at MWECAU" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end">
+                <div class="max-w-7xl mx-auto px-4 pb-8 w-full" data-aos="fade-up">
+                    <h1 class="font-heading text-4xl lg:text-5xl font-bold text-white mb-2">Campus Life</h1>
+                    <p class="text-xl text-white/90">Life at MWECAU is enriching, exciting, and energizing</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Life Section -->
+        <section class="py-16 lg:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="font-heading text-3xl lg:text-4xl font-bold text-center text-primary mb-4" data-aos="fade-up">Student Life</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Life at MWECAU is enriching, exciting, and energizing</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Student Affairs -->
+                    <article class="card-lift bg-white rounded-xl shadow-lg overflow-hidden group spin-icon" data-aos="fade-up" data-aos-delay="0">
+                        <div class="overflow-hidden h-48">
+                            <img src="img/campus-life/mwecau_student-affair.JPG" alt="Student Affairs" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4 -mt-12 relative z-10 border-4 border-white shadow-lg mx-auto">
+                                <i data-lucide="users" class="w-6 h-6 text-primary"></i>
+                            </div>
+                            <h3 class="font-heading text-xl font-bold text-primary mb-3 text-center">Student Affairs</h3>
+                            <p class="text-gray-600 text-center">At MWECAU, student organizations play a key role in enhancing student experience and building community.</p>
+                        </div>
+                    </article>
+
+                    <!-- Clubs and Organizations -->
+                    <article class="card-lift bg-white rounded-xl shadow-lg overflow-hidden group spin-icon" data-aos="fade-up" data-aos-delay="100">
+                        <div class="overflow-hidden h-48">
+                            <img src="img/campus-life/mwecau_image4.JPG" alt="Clubs and Organizations" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 -mt-12 relative z-10 border-4 border-white shadow-lg mx-auto">
+                                <i data-lucide="heart" class="w-6 h-6 text-accent"></i>
+                            </div>
+                            <h3 class="font-heading text-xl font-bold text-primary mb-3 text-center">Clubs &amp; Organizations</h3>
+                            <p class="text-gray-600 text-center">The University offers various clubs and associations that cater to academic, social, and cultural interests.</p>
+                        </div>
+                    </article>
+
+                    <!-- Housing -->
+                    <article class="card-lift bg-white rounded-xl shadow-lg overflow-hidden group spin-icon" data-aos="fade-up" data-aos-delay="200">
+                        <div class="overflow-hidden h-48">
+                            <img src="img/mwecau_housing.JPG" alt="Housing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4 -mt-12 relative z-10 border-4 border-white shadow-lg mx-auto">
+                                <i data-lucide="home" class="w-6 h-6 text-primary"></i>
+                            </div>
+                            <h3 class="font-heading text-xl font-bold text-primary mb-3 text-center">Housing</h3>
+                            <p class="text-gray-600 text-center">MWECAU offers on-campus housing facilities that provide a safe and conducive living environment for students.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creativity & Talents Section with Splide -->
+        <section class="py-16 lg:py-20 bg-gradient-to-br from-primary/5 to-accent/5">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Image Carousel -->
+                    <div data-aos="fade-right">
+                        <div id="talents-splide" class="splide rounded-xl overflow-hidden shadow-2xl" aria-label="Creativity and Talents">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide"><img src="img/campus-life/spirtual4.jpg" alt="Student talents" class="w-full h-[400px] object-cover"></li>
+                                    <li class="splide__slide"><img src="img/campus-life/spirtual1.jpg" alt="Student talents" class="w-full h-[400px] object-cover"></li>
+                                    <li class="splide__slide"><img src="img/campus-life/spirtual3.jpg" alt="Student talents" class="w-full h-[400px] object-cover"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div data-aos="fade-left" data-aos-delay="200">
+                        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-primary mb-6">Creativity &amp; Talents</h2>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                            MWECAU has a rich tradition of fostering creativity and talents, and presents a wide range of performances. Our students showcase their artistic abilities through music, drama, dance, and various cultural activities throughout the academic year.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex items-center gap-2 bg-white rounded-lg px-4 py-2 shadow-md">
+                                <i data-lucide="music" class="w-5 h-5 text-accent"></i>
+                                <span class="font-medium">Music</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white rounded-lg px-4 py-2 shadow-md">
+                                <i data-lucide="drama" class="w-5 h-5 text-primary"></i>
+                                <span class="font-medium">Drama</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white rounded-lg px-4 py-2 shadow-md">
+                                <i data-lucide="party-popper" class="w-5 h-5 text-accent"></i>
+                                <span class="font-medium">Dance</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white rounded-lg px-4 py-2 shadow-md">
+                                <i data-lucide="palette" class="w-5 h-5 text-primary"></i>
+                                <span class="font-medium">Art</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campus Gallery Grid -->
+        <section class="py-16 lg:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="font-heading text-3xl lg:text-4xl font-bold text-center text-primary mb-12" data-aos="fade-up">Campus Gallery</h2>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="gallery-item rounded-xl overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="0">
+                        <img src="img/campus-life/spirtual5.jpg" alt="Campus life" class="w-full h-40 lg:h-52 object-cover">
+                        <div class="gallery-overlay">
+                            <i data-lucide="zoom-in" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item rounded-xl overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="50">
+                        <img src="img/campus-life/mwecau_sports1.jpg" alt="Sports" class="w-full h-40 lg:h-52 object-cover">
+                        <div class="gallery-overlay">
+                            <i data-lucide="zoom-in" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item rounded-xl overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="img/campus-life/spirtual1.jpg" alt="Spiritual activities" class="w-full h-40 lg:h-52 object-cover">
+                        <div class="gallery-overlay">
+                            <i data-lucide="zoom-in" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item rounded-xl overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="150">
+                        <img src="img/campus-life/mwecau_student-affair.JPG" alt="Student affairs" class="w-full h-40 lg:h-52 object-cover">
+                        <div class="gallery-overlay">
+                            <i data-lucide="zoom-in" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item rounded-xl overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="img/campus-life/library2.JPG" alt="Library" class="w-full h-40 lg:h-52 object-cover">
+                        <div class="gallery-overlay">
+                            <i data-lucide="zoom-in" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item rounded-xl overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="250">
+                        <img src="img/campus-life/parking.JPG" alt="Campus parking" class="w-full h-40 lg:h-52 object-cover">
+                        <div class="gallery-overlay">
+                            <i data-lucide="zoom-in" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item rounded-xl overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="img/campus-life/books.JPG" alt="Books" class="w-full h-40 lg:h-52 object-cover">
+                        <div class="gallery-overlay">
+                            <i data-lucide="zoom-in" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item rounded-xl overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="350">
+                        <img src="img/campus-life/mwecau_sports2.jpg" alt="Sports" class="w-full h-40 lg:h-52 object-cover">
+                        <div class="gallery-overlay">
+                            <i data-lucide="zoom-in" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sports and Entertainment -->
+        <section class="py-16 lg:py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="font-heading text-3xl lg:text-4xl font-bold text-center text-primary mb-12" data-aos="fade-up">Sports &amp; Entertainment</h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Athletics - Large -->
+                    <div class="sports-card rounded-xl overflow-hidden shadow-2xl lg:row-span-2 h-[300px] lg:h-auto pulse-glow" data-aos="fade-right">
+                        <img src="img/campus-life/mwecau_sports4.jpg" alt="Athletics" class="w-full h-full object-cover">
+                        <div class="sports-tag">
+                            <div class="flex items-center gap-3 text-white">
+                                <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                                    <i data-lucide="trophy" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-heading text-xl font-bold">Athletics</h3>
+                                    <p class="text-sm text-white/80">Track &amp; Field Excellence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Entertainment -->
+                    <div class="sports-card rounded-xl overflow-hidden shadow-2xl h-[250px] pulse-glow" data-aos="fade-left" data-aos-delay="100">
+                        <img src="img/campus-life/talent1.jpg" alt="Entertainment" class="w-full h-full object-cover">
+                        <div class="sports-tag">
+                            <div class="flex items-center gap-3 text-white">
+                                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                                    <i data-lucide="music" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-heading text-xl font-bold">Entertainment</h3>
+                                    <p class="text-sm text-white/80">Music &amp; Cultural Shows</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Basketball -->
+                    <div class="sports-card rounded-xl overflow-hidden shadow-2xl h-[250px] pulse-glow" data-aos="fade-left" data-aos-delay="200">
+                        <img src="img/campus-life/mwecau_sports2.jpg" alt="Basketball" class="w-full h-full object-cover">
+                        <div class="sports-tag">
+                            <div class="flex items-center gap-3 text-white">
+                                <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                                    <i data-lucide="circle" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-heading text-xl font-bold">Basketball</h3>
+                                    <p class="text-sm text-white/80">Competitive Teams</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 lg:py-28 bg-gradient-to-r from-primary via-primary-dark to-primary text-white text-center relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-0 left-0 w-72 h-72 bg-accent rounded-full filter blur-3xl"></div>
+                <div class="absolute bottom-0 right-0 w-96 h-96 bg-accent rounded-full filter blur-3xl"></div>
+            </div>
+            <div class="max-w-4xl mx-auto px-4 relative z-10" data-aos="zoom-in" data-aos-duration="800">
+                <h2 class="font-heading text-3xl lg:text-5xl font-bold mb-4 uppercase">Experience Campus Life</h2>
+                <p class="text-xl lg:text-2xl mb-8 text-white/90">Join our vibrant community and make memories that last a lifetime</p>
+                <a href="https://uas.mwecau.ac.tz" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 hover:scale-105 shadow-lg">
+                    <i data-lucide="pen-line" class="w-5 h-5"></i>
+                    Apply Now
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white">
+        <div class="bg-primary py-4 px-4">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="font-semibold">Get connected with us on social networks:</p>
+                <div class="flex items-center gap-6">
+                    <a href="https://www.facebook.com/mwecau2016/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-accent transition-all duration-300 hover:scale-125"><i data-lucide="facebook" class="w-7 h-7"></i></a>
+                    <a href="https://twitter.com/mwecau1" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="hover:text-accent transition-all duration-300 hover:scale-125"><i data-lucide="twitter" class="w-7 h-7"></i></a>
+                    <a href="https://www.instagram.com/mwengecatholicuniversity/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-accent transition-all duration-300 hover:scale-125"><i data-lucide="instagram" class="w-7 h-7"></i></a>
+                    <a href="https://www.linkedin.com/company/mwenge-catholic-university/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-accent transition-all duration-300 hover:scale-125"><i data-lucide="linkedin" class="w-7 h-7"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <img src="img/mwecau.png" alt="MWECAU Logo" class="h-20 w-auto mb-4">
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        Welcome to Mwenge Catholic University (MWECAU), a University that gives you the opportunity to pursue quality education in truthfulness and freedom of thought.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2"><i data-lucide="file-text" class="w-5 h-5"></i> Documents</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://cleven12.github.io/mw_web/uni-pdf-preview/1767168412-ALMANAC%20FOR%202025_2026.pdf" target="_blank" class="hover:text-accent transition-colors text-sm">Almanac</a></li>
+                        <li><a href="https://cleven12.github.io/mw_web/uni-pdf-preview/1758532836-Postgraduate%20Programmes.pdf" target="_blank" class="hover:text-accent transition-colors text-sm">Fee Structure</a></li>
+                        <li><a href="https://cleven12.github.io/mw_web/uni-pdf-preview/1758612049-Join%20Instruction%20Postgraduate%202025-2026.pdf" target="_blank" class="hover:text-accent transition-colors text-sm">Joining Instructions</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2"><i data-lucide="link" class="w-5 h-5"></i> Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://uas.mwecau.ac.tz" target="_blank" class="hover:text-accent transition-colors text-sm">Online Application</a></li>
+                        <li><a href="https://ums.mwecau.ac.tz" target="_blank" class="hover:text-accent transition-colors text-sm">University Management System</a></li>
+                        <li><a href="academics.html" class="hover:text-accent transition-colors text-sm">Programmes</a></li>
+                        <li><a href="https://cleven12.github.io/mw_web/library.html" class="hover:text-accent transition-colors text-sm">Library</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2"><i data-lucide="mail" class="w-5 h-5"></i> Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2 text-sm"><i data-lucide="map-pin" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i> P.O Box 1226, Moshi, Tanzania</li>
+                        <li class="flex items-center gap-2 text-sm"><i data-lucide="phone" class="w-5 h-5 text-accent flex-shrink-0"></i> <a href="tel:+255272751999" class="hover:text-accent transition-colors">+255 27 275 1999</a></li>
+                        <li class="flex items-center gap-2 text-sm"><i data-lucide="mail" class="w-5 h-5 text-accent flex-shrink-0"></i> <a href="mailto:info@mwecau.ac.tz" class="hover:text-accent transition-colors">info@mwecau.ac.tz</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-white/20 py-6 px-4 text-center">
+            <p class="text-white/80">&copy; 2025 Mwenge Catholic University. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <script>
+        lucide.createIcons();
+        AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 50 });
+
+        // Talents Splide with fade effect
+        new Splide('#talents-splide', {
+            type: 'fade',
+            rewind: true,
+            autoplay: true,
+            interval: 4000,
+            pauseOnHover: true,
+            arrows: true,
+            pagination: true,
+            speed: 800,
+        }).mount();
+
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        mobileMenuBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            mobileMenuBtn.setAttribute('aria-expanded', isOpen);
+            menuIcon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+            lucide.createIcons();
+        });
+    </script>
+</body>
+
+</html>
