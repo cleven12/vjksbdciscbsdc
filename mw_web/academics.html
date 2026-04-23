@@ -26,17 +26,18 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#513f83',
-                        'primary-dark': '#3b2a68',
-                        accent: '#e000e7',
-                        'accent-hover': '#c000c7',
+                        primary: '#1e3fa8',
+                        'primary-dark': '#152d7a',
+                        accent: '#c8972a',
+                        'accent-hover': '#a87a20',
                     },
                     fontFamily: {
                         heading: ['Oswald', 'sans-serif'],
@@ -55,12 +56,12 @@
         .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
         .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
         .nav-link-premium { position: relative; }
-        .nav-link-premium::after { content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background: #e000e7; transition: all 0.3s ease; transform: translateX(-50%); }
+        .nav-link-premium::after { content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background: #c8972a; transition: all 0.3s ease; transform: translateX(-50%); }
         .nav-link-premium:hover::after { width: 100%; }
         .card-lift { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .card-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(81, 63, 131, 0.15); }
-        .gradient-text { background: linear-gradient(135deg, #513f83 0%, #e000e7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        a:focus, button:focus { outline: 2px solid #e000e7; outline-offset: 2px; }
+        .card-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(30, 63, 168, 0.15); }
+        .gradient-text { background: linear-gradient(135deg, #1e3fa8 0%, #c8972a 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        a:focus, button:focus { outline: 2px solid #c8972a; outline-offset: 2px; }
         /* Wave divider */
         .wave-divider svg { display: block; width: 100%; }
         .wave-divider .shape-fill { fill: #ffffff; }
@@ -80,10 +81,10 @@
     <!-- Secondary Nav Bar - Desktop -->
     <div class="hidden md:flex items-center justify-between bg-primary-dark text-white text-sm px-4 py-2">
         <div class="flex items-center gap-4">
-            <a href="https://www.facebook.com/mwecau2016/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-accent transition-all duration-300 hover:scale-110"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-            <a href="https://www.instagram.com/mwengecatholicuniversity/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-accent transition-all duration-300 hover:scale-110"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-            <a href="https://twitter.com/mwecau1" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="hover:text-accent transition-all duration-300 hover:scale-110"><i data-lucide="twitter" class="w-5 h-5"></i></a>
-            <a href="https://www.linkedin.com/company/mwenge-catholic-university/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-accent transition-all duration-300 hover:scale-110"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+            <a href="https://www.facebook.com/mwecau2016/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-accent transition-all duration-300 hover:scale-110"><i class="fab fa-facebook-f w-5 h-5"></i></a>
+            <a href="https://www.instagram.com/mwengecatholicuniversity/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-accent transition-all duration-300 hover:scale-110"><i class="fab fa-instagram w-5 h-5"></i></a>
+            <a href="https://twitter.com/mwecau1" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="hover:text-accent transition-all duration-300 hover:scale-110"><i class="fab fa-x-twitter w-5 h-5"></i></a>
+            <a href="https://www.linkedin.com/company/mwenge-catholic-university/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-accent transition-all duration-300 hover:scale-110"><i class="fab fa-linkedin-in w-5 h-5"></i></a>
         </div>
         <nav class="flex items-center gap-6" aria-label="Secondary navigation">
             <a href="gallery.html" class="hover:text-accent transition-colors">Gallery</a>
@@ -107,7 +108,7 @@
                     <a href="https://cleven12.github.io/mw_web/index.html" class="nav-link-premium text-white font-medium hover:text-accent transition-colors py-2">Home</a>
                     <a href="https://cleven12.github.io/mw_web/about.html" class="nav-link-premium text-white font-medium hover:text-accent transition-colors py-2">About</a>
                     <div class="dropdown relative">
-                        <button class="nav-link-premium text-white font-medium hover:text-accent transition-colors py-2 flex items-center gap-1 bg-accent/20 px-4 rounded-lg" aria-haspopup="true">Academics <i data-lucide="chevron-down" class="w-4 h-4"></i></button>
+                        <button class="nav-link-premium text-white font-medium hover:text-accent transition-colors py-2 flex items-center gap-1 bg-accent/20 px-4 rounded-lg" aria-haspopup="true">Academics <i class="fas fa-chevron-down w-4 h-4"></i></button>
                         <ul class="dropdown-menu absolute top-full left-0 bg-white text-gray-900 shadow-xl rounded-lg py-2 min-w-64 z-50 border border-gray-100">
                             <li><a href="https://cleven12.github.io/mw_web/faculties/Faculty%20of%20Science.html" class="block px-4 py-2 hover:bg-primary hover:text-white transition-all duration-200">Faculty of Science</a></li>
                             <li><a href="https://cleven12.github.io/mw_web/faculties/Faculty%20of%20Humanities%20and%20Business%20Studies.html" class="block px-4 py-2 hover:bg-primary hover:text-white transition-all duration-200">Faculty of Humanities &amp; Business</a></li>
@@ -116,7 +117,7 @@
                         </ul>
                     </div>
                     <div class="dropdown relative">
-                        <button class="nav-link-premium text-white font-medium hover:text-accent transition-colors py-2 flex items-center gap-1" aria-haspopup="true">Admission <i data-lucide="chevron-down" class="w-4 h-4"></i></button>
+                        <button class="nav-link-premium text-white font-medium hover:text-accent transition-colors py-2 flex items-center gap-1" aria-haspopup="true">Admission <i class="fas fa-chevron-down w-4 h-4"></i></button>
                         <ul class="dropdown-menu absolute top-full left-0 bg-white text-gray-900 shadow-xl rounded-lg py-2 min-w-48 z-50 border border-gray-100">
                             <li><a href="academics.html" class="block px-4 py-2 hover:bg-primary hover:text-white transition-all duration-200">Admission Info</a></li>
                             <li><a href="https://uas.mwecau.ac.tz" class="block px-4 py-2 bg-accent text-white hover:bg-accent-hover transition-all duration-200 font-semibold">Apply Now</a></li>
@@ -127,18 +128,18 @@
                 </div>
 
                 <button id="mobile-menu-btn" class="lg:hidden text-white p-2 hover:bg-primary-dark rounded-lg transition-colors" aria-label="Toggle menu" aria-expanded="false">
-                    <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
+                    <i class="fas fa-bars w-6 h-6" id="menu-icon"></i>
                 </button>
             </div>
         </div>
 
         <div id="mobile-menu" class="mobile-menu lg:hidden bg-primary-dark">
             <div class="px-4 py-4 space-y-2">
-                <a href="https://cleven12.github.io/mw_web/index.html" class="block text-white py-3 px-4 rounded-lg hover:bg-accent transition-all duration-200 flex items-center gap-3"><i data-lucide="home" class="w-5 h-5"></i> Home</a>
-                <a href="https://cleven12.github.io/mw_web/about.html" class="block text-white py-3 px-4 rounded-lg hover:bg-accent transition-all duration-200 flex items-center gap-3"><i data-lucide="info" class="w-5 h-5"></i> About</a>
-                <a href="academics.html" class="block text-white py-3 px-4 rounded-lg bg-accent/30 flex items-center gap-3"><i data-lucide="book-open" class="w-5 h-5"></i> Academics</a>
-                <a href="https://uas.mwecau.ac.tz" class="block text-white py-3 px-4 rounded-lg bg-accent hover:bg-accent-hover transition-all duration-200 font-semibold flex items-center gap-3"><i data-lucide="pen-line" class="w-5 h-5"></i> Apply Now</a>
-                <a href="campus-life.html" class="block text-white py-3 px-4 rounded-lg hover:bg-accent transition-all duration-200 flex items-center gap-3"><i data-lucide="users" class="w-5 h-5"></i> Campus Life</a>
+                <a href="https://cleven12.github.io/mw_web/index.html" class="block text-white py-3 px-4 rounded-lg hover:bg-accent transition-all duration-200 flex items-center gap-3"><i class="fas fa-home w-5 h-5"></i> Home</a>
+                <a href="https://cleven12.github.io/mw_web/about.html" class="block text-white py-3 px-4 rounded-lg hover:bg-accent transition-all duration-200 flex items-center gap-3"><i class="fas fa-info-circle w-5 h-5"></i> About</a>
+                <a href="academics.html" class="block text-white py-3 px-4 rounded-lg bg-accent/30 flex items-center gap-3"><i class="fas fa-book-open w-5 h-5"></i> Academics</a>
+                <a href="https://uas.mwecau.ac.tz" class="block text-white py-3 px-4 rounded-lg bg-accent hover:bg-accent-hover transition-all duration-200 font-semibold flex items-center gap-3"><i class="fas fa-pen w-5 h-5"></i> Apply Now</a>
+                <a href="campus-life.html" class="block text-white py-3 px-4 rounded-lg hover:bg-accent transition-all duration-200 flex items-center gap-3"><i class="fas fa-users w-5 h-5"></i> Campus Life</a>
             </div>
         </div>
     </nav>
@@ -187,12 +188,12 @@
                         <div class="lg:w-1/2">
                             <div class="card-lift bg-white rounded-xl shadow-lg p-6 h-full">
                                 <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                                    <i data-lucide="award" class="w-6 h-6 text-primary"></i>
+                                    <i class="fas fa-award w-6 h-6 text-primary"></i>
                                 </div>
                                 <h3 class="font-heading text-2xl font-bold text-primary mb-3">Postgraduate Programmes</h3>
                                 <p class="text-gray-600 mb-6">Mwenge Catholic University offers a range of master&apos;s and doctoral degrees. Postgraduate students benefit from extraordinary resources and research opportunities.</p>
                                 <a href="https://cleven12.github.io/mw_web/programs/post-graduate.html" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:translate-x-2">
-                                    Postgraduate Programmes <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                                    Postgraduate Programmes <i class="fas fa-arrow-right w-5 h-5"></i>
                                 </a>
                             </div>
                         </div>
@@ -206,12 +207,12 @@
                         <div class="lg:w-1/2">
                             <div class="card-lift bg-white rounded-xl shadow-lg p-6 h-full">
                                 <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4">
-                                    <i data-lucide="graduation-cap" class="w-6 h-6 text-accent"></i>
+                                    <i class="fas fa-graduation-cap w-6 h-6 text-accent"></i>
                                 </div>
                                 <h3 class="font-heading text-2xl font-bold text-primary mb-3">Undergraduate Programmes</h3>
                                 <p class="text-gray-600 mb-6">Mwenge Catholic University offers a range of undergraduate degrees. Students benefit from extraordinary resources and world-class faculty.</p>
                                 <a href="https://cleven12.github.io/mw_web/programs/undergraduate.html" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:translate-x-2">
-                                    Undergraduate Programmes <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                                    Undergraduate Programmes <i class="fas fa-arrow-right w-5 h-5"></i>
                                 </a>
                             </div>
                         </div>
@@ -225,12 +226,12 @@
                         <div class="lg:w-2/3">
                             <div class="card-lift bg-white rounded-xl shadow-lg p-6 h-full">
                                 <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                                    <i data-lucide="book" class="w-6 h-6 text-primary"></i>
+                                    <i class="fas fa-book w-6 h-6 text-primary"></i>
                                 </div>
                                 <h3 class="font-heading text-2xl font-bold text-primary mb-3">Non-degree Programmes</h3>
                                 <p class="text-gray-600 mb-6">Mwenge Catholic University offers a range of certificate and diploma programmes. Students benefit from extraordinary resources and practical training opportunities.</p>
                                 <a href="https://cleven12.github.io/mw_web/programs/non-degree.html" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:translate-x-2">
-                                    Non-Degree Programmes <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                                    Non-Degree Programmes <i class="fas fa-arrow-right w-5 h-5"></i>
                                 </a>
                             </div>
                         </div>
@@ -246,7 +247,7 @@
                     <!-- Learning Abroad -->
                     <article class="card-lift bg-white rounded-xl shadow-lg p-8" data-aos="fade-right">
                         <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                            <i data-lucide="globe" class="w-7 h-7 text-primary"></i>
+                            <i class="fas fa-globe w-7 h-7 text-primary"></i>
                         </div>
                         <h3 class="font-heading text-2xl font-bold text-primary mb-4">Learning Abroad</h3>
                         <p class="text-gray-600 leading-relaxed">
@@ -257,7 +258,7 @@
                     <!-- Career Development -->
                     <article class="card-lift bg-white rounded-xl shadow-lg p-8" data-aos="fade-left" data-aos-delay="200">
                         <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-6">
-                            <i data-lucide="briefcase" class="w-7 h-7 text-accent"></i>
+                            <i class="fas fa-briefcase w-7 h-7 text-accent"></i>
                         </div>
                         <h3 class="font-heading text-2xl font-bold text-primary mb-4">Career Development</h3>
                         <p class="text-gray-600 leading-relaxed">
@@ -278,9 +279,9 @@
                 <h2 class="font-heading text-3xl lg:text-5xl font-bold mb-4 uppercase">Start Your Journey Today</h2>
                 <p class="text-xl lg:text-2xl mb-8 text-white/90">Join thousands of students who have transformed their lives at MWECAU</p>
                 <a href="https://uas.mwecau.ac.tz" target="_blank" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 hover:scale-105 shadow-lg">
-                    <i data-lucide="pen-line" class="w-5 h-5"></i>
+                    <i class="fas fa-pen w-5 h-5"></i>
                     Apply Now for 2025/2026
-                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    <i class="fas fa-arrow-right w-5 h-5"></i>
                 </a>
             </div>
         </section>
@@ -292,10 +293,10 @@
             <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
                 <p class="font-semibold">Get connected with us on social networks:</p>
                 <div class="flex items-center gap-6">
-                    <a href="https://www.facebook.com/mwecau2016/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-accent transition-all duration-300 hover:scale-125"><i data-lucide="facebook" class="w-7 h-7"></i></a>
-                    <a href="https://twitter.com/mwecau1" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="hover:text-accent transition-all duration-300 hover:scale-125"><i data-lucide="twitter" class="w-7 h-7"></i></a>
-                    <a href="https://www.instagram.com/mwengecatholicuniversity/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-accent transition-all duration-300 hover:scale-125"><i data-lucide="instagram" class="w-7 h-7"></i></a>
-                    <a href="https://www.linkedin.com/company/mwenge-catholic-university/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-accent transition-all duration-300 hover:scale-125"><i data-lucide="linkedin" class="w-7 h-7"></i></a>
+                    <a href="https://www.facebook.com/mwecau2016/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-accent transition-all duration-300 hover:scale-125"><i class="fab fa-facebook-f w-7 h-7"></i></a>
+                    <a href="https://twitter.com/mwecau1" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="hover:text-accent transition-all duration-300 hover:scale-125"><i class="fab fa-x-twitter w-7 h-7"></i></a>
+                    <a href="https://www.instagram.com/mwengecatholicuniversity/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-accent transition-all duration-300 hover:scale-125"><i class="fab fa-instagram w-7 h-7"></i></a>
+                    <a href="https://www.linkedin.com/company/mwenge-catholic-university/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-accent transition-all duration-300 hover:scale-125"><i class="fab fa-linkedin-in w-7 h-7"></i></a>
                 </div>
             </div>
         </div>
@@ -310,7 +311,7 @@
                 </div>
 
                 <div>
-                    <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2"><i data-lucide="file-text" class="w-5 h-5"></i> Documents</h3>
+                    <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2"><i class="fas fa-file-alt w-5 h-5"></i> Documents</h3>
                     <ul class="space-y-2">
                         <li><a href="https://cleven12.github.io/mw_web/uni-pdf-preview/1767168412-ALMANAC%20FOR%202025_2026.pdf" target="_blank" class="hover:text-accent transition-colors text-sm">Almanac</a></li>
                         <li><a href="https://cleven12.github.io/mw_web/uni-pdf-preview/1758532836-Postgraduate%20Programmes.pdf" target="_blank" class="hover:text-accent transition-colors text-sm">Fee Structure (Postgraduate)</a></li>
@@ -320,7 +321,7 @@
                 </div>
 
                 <div>
-                    <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2"><i data-lucide="link" class="w-5 h-5"></i> Quick Links</h3>
+                    <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2"><i class="fas fa-link w-5 h-5"></i> Quick Links</h3>
                     <ul class="space-y-2">
                         <li><a href="https://uas.mwecau.ac.tz" target="_blank" class="hover:text-accent transition-colors text-sm">Online Application</a></li>
                         <li><a href="https://ums.mwecau.ac.tz" target="_blank" class="hover:text-accent transition-colors text-sm">University Management System</a></li>
@@ -331,12 +332,12 @@
                 </div>
 
                 <div>
-                    <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2"><i data-lucide="mail" class="w-5 h-5"></i> Contact Us</h3>
+                    <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2"><i class="fas fa-envelope w-5 h-5"></i> Contact Us</h3>
                     <ul class="space-y-3">
-                        <li class="flex items-start gap-2 text-sm"><i data-lucide="map-pin" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i> P.O Box 1226, Moshi, Tanzania</li>
-                        <li class="flex items-center gap-2 text-sm"><i data-lucide="phone" class="w-5 h-5 text-accent flex-shrink-0"></i> <a href="tel:+255272751999" class="hover:text-accent transition-colors">+255 27 275 1999</a></li>
-                        <li class="flex items-center gap-2 text-sm"><i data-lucide="mail" class="w-5 h-5 text-accent flex-shrink-0"></i> <a href="mailto:info@mwecau.ac.tz" class="hover:text-accent transition-colors">info@mwecau.ac.tz</a></li>
-                        <li class="flex items-center gap-2 text-sm"><i data-lucide="mail" class="w-5 h-5 text-accent flex-shrink-0"></i> <a href="mailto:admissions@mwecau.ac.tz" class="hover:text-accent transition-colors">admissions@mwecau.ac.tz</a></li>
+                        <li class="flex items-start gap-2 text-sm"><i class="fas fa-map-marker-alt w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i> P.O Box 1226, Moshi, Tanzania</li>
+                        <li class="flex items-center gap-2 text-sm"><i class="fas fa-phone w-5 h-5 text-accent flex-shrink-0"></i> <a href="tel:+255272751999" class="hover:text-accent transition-colors">+255 27 275 1999</a></li>
+                        <li class="flex items-center gap-2 text-sm"><i class="fas fa-envelope w-5 h-5 text-accent flex-shrink-0"></i> <a href="mailto:info@mwecau.ac.tz" class="hover:text-accent transition-colors">info@mwecau.ac.tz</a></li>
+                        <li class="flex items-center gap-2 text-sm"><i class="fas fa-envelope w-5 h-5 text-accent flex-shrink-0"></i> <a href="mailto:admissions@mwecau.ac.tz" class="hover:text-accent transition-colors">admissions@mwecau.ac.tz</a></li>
                     </ul>
                 </div>
             </div>
@@ -351,7 +352,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     
     <script>
-        lucide.createIcons();
+        
         AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 50 });
 
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -360,8 +361,8 @@
         mobileMenuBtn.addEventListener('click', () => {
             const isOpen = mobileMenu.classList.toggle('open');
             mobileMenuBtn.setAttribute('aria-expanded', isOpen);
-            menuIcon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
-            lucide.createIcons();
+            menuIcon.className = isOpen ? 'fas fa-times w-6 h-6' : 'fas fa-bars w-6 h-6';
+            
         });
     </script>
 </body>
