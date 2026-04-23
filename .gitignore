@@ -1,2 +1,4 @@
 mw_web/images
 mw_web/img
+venv
+.env
