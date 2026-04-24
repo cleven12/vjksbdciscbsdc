@@ -25,7 +25,7 @@ body {
     font-family: "Oswald", sans-serif;
 }
 .favbg {
-    background-color: #1e3fa8;
+    background-color: var(--color-primary);
     color: white;
 }
 @keyframes spin {
@@ -36,7 +36,7 @@ body {
 
 /* university header tag */
 .uniHeader {
-    background-color: #152d7a;
+    background-color: var(--color-primary-dark);
     color: white;
 }
 
@@ -69,7 +69,7 @@ body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode";
 }
 .dark-orange {
-    color: #c8972a !important;
+    color: var(--color-accent) !important;
 }
 
 /* navbar css */
@@ -135,12 +135,12 @@ body {
 }
 
 .sliderArrows {
-    color: #c8972a;
+    color: var(--color-accent);
 }
 /* coursel images */
 .landing-image {
-    background-image: linear-gradient(rgba(0, 10, 10, 0.1), #1e3fa8),
-        url("../img/university-image1.JPG");
+    background-image: linear-gradient(rgba(0, 10, 10, 0.1), var(--color-primary)),
+        url("https://res.cloudinary.com/diucc3vyb/image/upload/f_auto,q_auto/mwecau/banners/university-image1");
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -210,10 +210,10 @@ a {
     border: 1px solid #fff;
     color: #fff;
     border-radius: 8px;
-    background: linear-gradient(to left, #1e3fa8, #c8972a);
+    background: linear-gradient(to left, var(--color-primary), var(--color-accent));
 }
 .admissionBtn:hover {
-    background-color: #c8972a;
+    background-color: var(--color-accent);
     transition: 0.7s;
     transform: scale(1.1);
 }
@@ -225,7 +225,7 @@ a {
 .overlay-image {
     position: absolute;
     border-radius: 8px;
-    border-bottom: 5px solid #1e3fa8;
+    border-bottom: 5px solid var(--color-primary);
     top: 70%;
     left: 100px;
     width: 60%;
@@ -237,7 +237,7 @@ a {
     border: 1px solid #fcfbfd;
     color: #fff;
     border-radius: 5px;
-    background: linear-gradient(to left, #1e3fa8, #c8972a);
+    background: linear-gradient(to left, var(--color-primary), var(--color-accent));
 }
 .welcomeBtn:hover {
     color: white;
@@ -312,7 +312,7 @@ a {
     border: 1px solid #fff;
     color: #fff;
     border-radius: 8px;
-    background: linear-gradient(to left, #1e3fa8, #c8972a);
+    background: linear-gradient(to left, var(--color-primary), var(--color-accent));
 }
 .newsBtn:hover {
     transition: 0.8s;
@@ -321,7 +321,7 @@ a {
 .overlay-newsCard {
     position: absolute;
     border-radius: 8px;
-    border-bottom: 2px solid #1e3fa8;
+    border-bottom: 2px solid var(--color-primary);
     color: #000;
     top: 80%;
     margin-left: 0px;
@@ -334,13 +334,13 @@ a {
     border-radius: 8x;
     flex-direction: column;
     align-items: center;
-    box-shadow: 1px 1px 12px #1e3fa8;
+    box-shadow: 1px 1px 12px var(--color-primary);
 }
 
 .whyChooseUS-card:hover {
     transition: 0.9s;
     transform: translateY(-40px);
-    box-shadow: 1px 1px 17px #c8972a;
+    box-shadow: 1px 1px 17px var(--color-accent);
 }
 @media (max-width: 991px) {
     .whyChooseUS-card {
@@ -350,13 +350,13 @@ a {
 .whyButtons {
     padding: 5px;
     width: 50%;
-    border: 1px solid #1e3fa8;
+    border: 1px solid var(--color-primary);
     color: #fff;
     border-radius: 5px;
-    background: linear-gradient(to left, #1e3fa8, #c8972a);
+    background: linear-gradient(to left, var(--color-primary), var(--color-accent));
 }
 .whyButtons:hover {
-    background: linear-gradient(to bottom, #1e3fa8, #c8972a);
+    background: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
     color: white;
     transition: 1s;
 }
@@ -370,7 +370,7 @@ a {
 /* css for explore more section starts here */
 .explore {
     background: linear-gradient(rgba(0, 0, 0, 0.0), #1a2d6b),
-        url("../img/mwecau4.JPG");
+        url("https://res.cloudinary.com/diucc3vyb/image/upload/f_auto,q_auto/mwecau/banners/mwecau4");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -399,7 +399,7 @@ a {
     border: 1px solid #fff;
     color: #fff;
     border-radius: 8px;
-    background: linear-gradient(to right, #1e3fa8, #c8972a);
+    background: linear-gradient(to right, var(--color-primary), var(--color-accent));
 }
 .exploreBtn:hover {
     transition: 0.9s;
@@ -409,14 +409,14 @@ a {
 /* box shadow for the cards in section studying at Mwenge Catholic University */
 .bottomBorder {
     border-radius: 9px;
-    border-bottom: 5px solid #1e3fa8;
-    border-top: 5px solid #1e3fa8;
+    border-bottom: 5px solid var(--color-primary);
+    border-top: 5px solid var(--color-primary);
     border-style: double;
-    box-shadow: 0 0 1px #1e3fa8;
+    box-shadow: 0 0 1px var(--color-primary);
 }
 .coursesBorder {
     border-radius: 9px;
-    border-bottom: 2px solid #c8972a;
+    border-bottom: 2px solid var(--color-accent);
 }
 
 .bottomBorder img {
@@ -433,14 +433,14 @@ a {
 
 .studyingAtMwenge:hover {
     transform: scale(1);
-    box-shadow: 1px 1px 13px #c8972a;
+    box-shadow: 1px 1px 13px var(--color-accent);
     width: 100%;
 }
 
 /* for upcoming events section */
 .upComingEvent {
     background-image: linear-gradient(rgba(30, 90, 0, 0.1), #122847),
-        url("../img/uni.jpg");
+        url("https://res.cloudinary.com/diucc3vyb/image/upload/f_auto,q_auto/mwecau/banners/uni");
     background-size: cover;
     background-position: center;
     height: 460px;
@@ -458,8 +458,8 @@ a {
 }
 .upComingEvent2 .card {
     border: none;
-    border-left: 2px solid #1e3fa8;
-    border-right: 2px solid #1e3fa8;
+    border-left: 2px solid var(--color-primary);
+    border-right: 2px solid var(--color-primary);
 }
 .upComingEvent2 img {
     object-fit: cover;
@@ -474,19 +474,19 @@ a {
     border: 1px solid #fff;
     color: #fff;
     border-radius: 3px;
-    background-color: #c8972a;
+    background-color: var(--color-accent);
 }
 .eventsBtn {
     padding: 10px;
     border: 1px solid #fff;
     color: #fff;
     border-radius: 8px;
-    background: linear-gradient(to left, #1e3fa8, #c8972a);
+    background: linear-gradient(to left, var(--color-primary), var(--color-accent));
 }
 
 /*css for favorite color for icons starts here */
 .icons {
-    color: #1e3fa8;
+    color: var(--color-primary);
 }
 /* css for mission-card in about page */
 .youtubeCards {
@@ -496,11 +496,11 @@ a {
     transform: translateY(-10px);
 }
 iframe {
-    border-color: #c8972a;
+    border-color: var(--color-accent);
     border-radius: 10px;
 }
 iframe:hover {
-    border-color: #c8972a;
+    border-color: var(--color-accent);
     border-radius: 10px;
 }
 
@@ -516,7 +516,7 @@ iframe:hover {
     border: none;
     color: #fff;
     border-radius: 5px;
-    background: linear-gradient(to left, #1e3fa8, #c8972a);
+    background: linear-gradient(to left, var(--color-primary), var(--color-accent));
 }
 @media (max-width) {
     .whyButtons {
@@ -542,10 +542,10 @@ iframe:hover {
 
 /* a favorite site color */
 .favColor {
-    color: #1e3fa8;
+    color: var(--color-primary);
 }
 .favBackground {
-    background-color: #1e3fa8;
+    background-color: var(--color-primary);
 }
 .a .icon {
     width: 50px;
@@ -556,7 +556,7 @@ iframe:hover {
 }
 
 .academics1 {
-    background-image: linear-gradient(rgba(223, 118, 230, 0), #1e3fa8),
+    background-image: linear-gradient(rgba(223, 118, 230, 0), var(--color-primary)),
         url("https://mwecau.ac.tz/img/sample-banner2.jpg");
     background-size: cover;
     background-position: center;
@@ -574,7 +574,7 @@ iframe:hover {
 }
 
 .academics2 {
-    background-image: url("../img/campus-life/mwecau_image1.JPG");
+    background-image: url("https://res.cloudinary.com/diucc3vyb/image/upload/f_auto,q_auto/mwecau/campus/mwecau_image1");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -594,7 +594,7 @@ iframe:hover {
 .academics2 h3 {
     font-style: italic;
     font-weight: bold;
-    color: #1e3fa8;
+    color: var(--color-primary);
     font-family: "Trebuchet MS", Arial, sans-serif;
 }
 /* Additional styling for small screens */
@@ -619,7 +619,7 @@ iframe:hover {
 .overlay-academicsCard {
     position: absolute;
     border-radius: 8px;
-    border-bottom: 5px solid #1e3fa8;
+    border-bottom: 5px solid var(--color-primary);
     top: 30%;
     left: 500px;
     width: 100%;
@@ -632,7 +632,7 @@ iframe:hover {
 }
 .right .card {
     border: 1px solid #1e3490;
-    box-shadow: 1px 5px 23px #c8972a;
+    box-shadow: 1px 5px 23px var(--color-accent);
     margin-top: 50px;
 }
 @media only screen and (max-width: 991px) {
@@ -650,7 +650,7 @@ iframe:hover {
 }
 .left2 .card {
     border: 1px solid #1e3490;
-    box-shadow: 1px 3px 23px #c8972a;
+    box-shadow: 1px 3px 23px var(--color-accent);
     margin-top: 50px;
 }
 @media only screen and (max-width: 991px) {
@@ -678,20 +678,20 @@ iframe:hover {
 }
 .programsCards:hover {
     transform: scale(1.1);
-    box-shadow: 1px 1px 13px #c8972a;
+    box-shadow: 1px 1px 13px var(--color-accent);
     width: 100%;
 }
 
 /* style for buttons on about page */
 .programsBtn {
     padding: 5px;
-    border: 1px solid #1e3fa8;
+    border: 1px solid var(--color-primary);
     color: #fff;
     border-radius: 5px;
-    background-color: #c8972a;
+    background-color: var(--color-accent);
 }
 .programsBtn:hover {
-    /* background-color: #1e3fa8; */
+    /* background-color: var(--color-primary); */
     color: white;
     transition: 0.8s;
     transform: scale(1.1);
@@ -700,10 +700,10 @@ iframe:hover {
 .courseBtn {
     width: auto;
     padding: 8px;
-    border: 1px solid #1e3fa8;
+    border: 1px solid var(--color-primary);
     color: #fff;
     border-radius: 5px;
-    background-color: #1e3fa8;
+    background-color: var(--color-primary);
 
     display: inline-flex;
     align-items: end;
@@ -713,13 +713,13 @@ iframe:hover {
 .learnBtn {
     padding: 5px;
     /* width: 0%; */
-    border: 1px solid #1e3fa8;
+    border: 1px solid var(--color-primary);
     color: #fff;
     border-radius: 5px;
-    background-color: #1e3fa8;
+    background-color: var(--color-primary);
 }
 .learnBtn:hover {
-    /* background-color: #1e3fa8; */
+    /* background-color: var(--color-primary); */
     color: white;
     transition: 0.8s;
     transform: scale(1.1);
@@ -729,12 +729,12 @@ iframe:hover {
     padding: 5px;
     color: #fff;
     border-radius: 5px;
-    background-color: #c8972a;
+    background-color: var(--color-accent);
 }
 /* for website footer section */
 .footer-container {
-    background-image: linear-gradient(rgba(10, 26, 74, 0.8), #1e3fa8),
-        url("../img/uni.jpg");
+    background-image: linear-gradient(rgba(10, 26, 74, 0.8), var(--color-primary)),
+        url("https://res.cloudinary.com/diucc3vyb/image/upload/f_auto,q_auto/mwecau/banners/uni");
     background-size: cover;
     background-position: center;
     height: auto;
@@ -795,13 +795,13 @@ a {
 }
 
 .admission-btn {
-    background-color: #1e3fa8;
+    background-color: var(--color-primary);
     color: white;
 }
 
 .admission-btn:hover {
     background-color: white;
-    color: #1e3fa8;
+    color: var(--color-primary);
 }
 
 .about-container {
@@ -811,11 +811,11 @@ a {
 
 .about-container h3,
 .academic-cont h3 {
-    color: #1e3fa8;
+    color: var(--color-primary);
     font-size: 25px;
     margin-bottom: 10px;
     font-stretch: expanded;
-    border-bottom: 2px solid #1e3fa8;
+    border-bottom: 2px solid var(--color-primary);
 }
 
 .about-container p {
@@ -832,13 +832,13 @@ a {
     border-radius: 8x;
     flex-direction: column;
     align-items: center;
-    box-shadow: 1px 1px 12px #1e3fa8;
+    box-shadow: 1px 1px 12px var(--color-primary);
 }
 
 .mission-card:hover {
     transition: 0.9s;
     transform: translateY(-40px);
-    box-shadow: 1px 1px 17px #c8972a;
+    box-shadow: 1px 1px 17px var(--color-accent);
 }
 
 .academic-cont {
@@ -886,15 +886,15 @@ textarea {
 }
 
 .form-btn {
-    background-color: #1e3fa8;
+    background-color: var(--color-primary);
     color: white;
     margin: 10px;
 }
 
 .form-btn:hover {
     background-color: white;
-    color: #1e3fa8;
-    border: 1px solid #1e3fa8;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
 }
 .contact-map {
     width: 100%;
@@ -1239,7 +1239,7 @@ textarea {
 
 .event-form {
     padding: 10px;
-    border-bottom: 2px solid #1e3fa8;
+    border-bottom: 2px solid var(--color-primary);
 }
 
 .event-form input,
@@ -1249,22 +1249,22 @@ select {
     border: none;
     border-radius: 5px;
     margin: 5px;
-    box-shadow: 0px 1px #1e3fa8;
+    box-shadow: 0px 1px var(--color-primary);
 }
 
 .search-btn {
     border: none;
     border-radius: 5px;
     padding: 8px;
-    background-color: #1e3fa8;
+    background-color: var(--color-primary);
     color: white;
     cursor: pointer;
 }
 
 .search-btn:hover {
     background-color: white;
-    color: #1e3fa8;
-    border: 1px solid #1e3fa8;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
 }
 
 .event-img {
@@ -1320,7 +1320,7 @@ select {
     color: black;
 }
 .link:hover {
-    color: #1e3fa8;
+    color: var(--color-primary);
 }
 
 /* event */
@@ -1400,7 +1400,7 @@ select {
 
 .event-detail div i {
     margin: 0 10px;
-    color: #1e3fa8;
+    color: var(--color-primary);
 }
 
 .event-detail div h6 {
@@ -1415,7 +1415,7 @@ select {
     background-color: #a8c0e8;
     padding: 5px;
     border-bottom: none;
-    border-left: 3px solid #1e3fa8;
+    border-left: 3px solid var(--color-primary);
 }
 
 .event-socials {
@@ -1432,7 +1432,7 @@ select {
 }
 
 .event-socials i:hover {
-    background-color: #1e3fa8;
+    background-color: var(--color-primary);
     color: white;
 }
 
@@ -1475,20 +1475,20 @@ select {
 
 .event-form2 input {
     width: 48%;
-    border: 1px solid #1e3fa8;
+    border: 1px solid var(--color-primary);
     padding: 8px;
     border-radius: 5px;
     margin: 5px;
-    box-shadow: 0px 1px #1e3fa8;
+    box-shadow: 0px 1px var(--color-primary);
 }
 
 .event-form2 textarea {
     width: 98%;
-    border: 1px solid #1e3fa8;
+    border: 1px solid var(--color-primary);
     padding: 10px;
     margin: 20px 0;
     border-radius: 5px;
-    box-shadow: 0px 1px #1e3fa8;
+    box-shadow: 0px 1px var(--color-primary);
 }
 
 .event-inputs {
@@ -1724,7 +1724,7 @@ select {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #1e3fa8;
+    background-color: var(--color-primary);
     color: white;
     padding: 5px;
     width: fit-content;
@@ -1759,7 +1759,7 @@ select {
 }
 
 .ict-resource:hover {
-    color: #c8972a;
+    color: var(--color-accent);
 }
 
 .ict-resource i {
@@ -1790,7 +1790,7 @@ select {
 
 .event-form {
     padding: 10px;
-    border-bottom: 2px solid #1e3fa8;
+    border-bottom: 2px solid var(--color-primary);
 }
 
 .event-form input,
@@ -1800,22 +1800,22 @@ select {
     border: none;
     border-radius: 5px;
     margin: 5px;
-    box-shadow: 0px 1px #1e3fa8;
+    box-shadow: 0px 1px var(--color-primary);
 }
 
 .search-btn {
     border: none;
     border-radius: 5px;
     padding: 8px;
-    background-color: #1e3fa8;
+    background-color: var(--color-primary);
     color: white;
     cursor: pointer;
 }
 
 .search-btn:hover {
     background-color: white;
-    color: #1e3fa8;
-    border: 1px solid #1e3fa8;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
 }
 
 .event-img {
@@ -1871,7 +1871,7 @@ select {
     color: black;
 }
 .link:hover {
-    color: #1e3fa8;
+    color: var(--color-primary);
 }
 
 /* event */
@@ -1931,7 +1931,7 @@ select {
 
 .event-detail div i {
     margin: 0 10px;
-    color: #1e3fa8;
+    color: var(--color-primary);
 }
 
 .event-detail div h6 {
@@ -1946,7 +1946,7 @@ select {
     background-color: #a8c0e8;
     padding: 5px;
     border-bottom: none;
-    border-left: 3px solid #1e3fa8;
+    border-left: 3px solid var(--color-primary);
 }
 
 .event-socials {
@@ -1963,7 +1963,7 @@ select {
 }
 
 .event-socials i:hover {
-    background-color: #1e3fa8;
+    background-color: var(--color-primary);
     color: white;
 }
 
@@ -2007,20 +2007,20 @@ select {
 .event-form2 input,
 .event-form2 select {
     width: 48%;
-    border: 1px solid #1e3fa8;
+    border: 1px solid var(--color-primary);
     padding: 8px;
     border-radius: 5px;
     margin: 5px;
-    box-shadow: 0px 1px #1e3fa8;
+    box-shadow: 0px 1px var(--color-primary);
 }
 
 .event-form2 textarea {
     width: 98%;
-    border: 1px solid #1e3fa8;
+    border: 1px solid var(--color-primary);
     padding: 10px;
     margin: 20px 0;
     border-radius: 5px;
-    box-shadow: 0px 1px #1e3fa8;
+    box-shadow: 0px 1px var(--color-primary);
 }
 
 .event-inputs {
@@ -2049,7 +2049,7 @@ select {
     width: 80%;
     margin-bottom: 10px;
     border-radius: 50%;
-    box-shadow: 3px 3px 5px #1e3fa8;
+    box-shadow: 3px 3px 5px var(--color-primary);
 }
 
 .short-profile span {
@@ -2076,7 +2076,7 @@ select {
 .office-contacts h5,
 .about span {
     font-size: 18px;
-    border-bottom: 2px solid #1e3fa8;
+    border-bottom: 2px solid var(--color-primary);
     margin-bottom: 5px;
     width: fit-content;
 }
@@ -2086,7 +2086,7 @@ select {
     margin: 10px auto;
     border-collapse: collapse;
     font-size: 16px;
-    box-shadow: 1px 1px 3px #1e3fa8;
+    box-shadow: 1px 1px 3px var(--color-primary);
     border-radius: 5px;
 }
 
@@ -2229,8 +2229,8 @@ a {
 
 /* Home small nave */
 .small-nav {
-    background-color: #152d7a;
-    /* background-color: #1e3fa8; */
+    background-color: var(--color-primary-dark);
+    /* background-color: var(--color-primary); */
     width: 100%;
     padding: 2px;
 }
@@ -2247,7 +2247,7 @@ a {
     font-size: 13px;
     list-style-type: none;
     width: max-content;
-    /* border-left: 1px solid #c8972a; */
+    /* border-left: 1px solid var(--color-accent); */
 }
 
 .small-nav ul li a {
@@ -2255,16 +2255,16 @@ a {
     text-decoration: none;
     color: white;
     font-family: "Trebuchet MS", Arial, sans-serif;
-    border-left: 2px solid #c8972a;
+    border-left: 2px solid var(--color-accent);
 }
 
 .small-nav ul li a:hover {
-    color: #c8972a;
+    color: var(--color-accent);
 }
 
 .vid {
     position: relative;
-    background-color: #1e3fa8;
+    background-color: var(--color-primary);
     /* height: fit-content; */
     overflow: hidden;
 }
@@ -2320,7 +2320,7 @@ a {
     text-align: center;
     color: white;
     font-family: 'Merriweather', serif;
-    background-image: linear-gradient(45deg, #152d7a, #1e3fa8, #2a52c9, #1e3fa8, #c8972a, #d4a845, #c8972a, #1e3fa8, #2a52c9, #152d7a);
+    background-image: linear-gradient(45deg, var(--color-primary-dark), var(--color-primary), #2a52c9, var(--color-primary), var(--color-accent), #d4a845, var(--color-accent), var(--color-primary), #2a52c9, var(--color-primary-dark));
     background-size: 300% 300%;
     animation: rotateColors 2s linear infinite;
 }
@@ -2508,7 +2508,7 @@ a {
     .event-form2 input,
     .event-form2 select {
         width: 98%;
-        border: 1px solid #1e3fa8;
+        border: 1px solid var(--color-primary);
     }
 
     .event-header h2 {
